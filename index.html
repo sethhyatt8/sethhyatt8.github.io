@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/icons/hub.svg" type="image/svg+xml" />
   <title>Main Hub</title>
   <style>
     :root {
@@ -51,6 +52,26 @@
       box-shadow: var(--shadow-md);
     }
 
+    .hub-link-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .hub-link-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      background: #0d1627;
+      object-fit: contain;
+    }
+
+    .hub-link-text {
+      min-width: 0;
+    }
+
     .hub-link-title {
       font-size: 1.1rem;
       font-weight: 700;
@@ -83,18 +104,33 @@
   <h1>Main Hub</h1>
 
   <a class="hub-link-box" href="/Workout/">
-    <div class="hub-link-title">Workout</div>
-    <p class="hub-link-description">High Intensity Interval Training Timer</p>
+    <div class="hub-link-row">
+      <img class="hub-link-icon" src="/icons/workout.svg" width="44" height="44" alt="" />
+      <div class="hub-link-text">
+        <div class="hub-link-title">Workout</div>
+        <p class="hub-link-description">High Intensity Interval Training Timer</p>
+      </div>
+    </div>
   </a>
 
   <a class="hub-link-box" href="/darts-scorer">
-    <div class="hub-link-title">Darts Scorer</div>
-    <p class="hub-link-description">Scoring interface for Cricket and x01, tracks player stats.</p>
+    <div class="hub-link-row">
+      <img class="hub-link-icon" src="/darts-scorer/favicon.svg" width="44" height="44" alt="" />
+      <div class="hub-link-text">
+        <div class="hub-link-title">Darts Scorer</div>
+        <p class="hub-link-description">Scoring interface for Cricket and x01, tracks player stats.</p>
+      </div>
+    </div>
   </a>
 
   <a class="hub-link-box" href="/MahJongGame">
-    <div class="hub-link-title">American MahJong</div>
-    <p class="hub-link-description">Analyze hands, and play mock games with Charleston</p>
+    <div class="hub-link-row">
+      <img class="hub-link-icon" src="/icons/mahjong.svg" width="44" height="44" alt="" />
+      <div class="hub-link-text">
+        <div class="hub-link-title">American MahJong</div>
+        <p class="hub-link-description">Analyze hands, and play mock games with Charleston</p>
+      </div>
+    </div>
   </a>
 </body>
 </html>

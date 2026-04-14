@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="Workout timer">
+  <rect width="32" height="32" rx="8" fill="#17233a"/>
+  <circle cx="16" cy="17" r="10" stroke="#3b5280" stroke-width="2"/>
+  <path
+    d="M16 7a10 10 0 0 1 8.66 15"
+    stroke="#fb7185"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+  <path stroke="#b9c7e3" stroke-linecap="round" stroke-width="2" d="M16 17v-5"/>
+  <circle cx="16" cy="17" r="1.8" fill="#f3f7ff"/>
+  <path fill="#f43f5e" d="M11 24h4v3h-4v-3Zm6 0h4v3h-4v-3Z"/>
+</svg>

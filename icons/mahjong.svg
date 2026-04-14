@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="American Mahjong">
+  <rect width="32" height="32" rx="8" fill="#17233a"/>
+  <rect x="6" y="5" width="20" height="22" rx="3" fill="#efe6cf" stroke="#8b7355" stroke-width="1.25"/>
+  <path stroke="#1b6b3a" stroke-linecap="round" stroke-width="2.2" d="M16 9v14"/>
+  <ellipse cx="16" cy="11" rx="2.2" ry="2.8" fill="#2d8f52"/>
+  <ellipse cx="16" cy="16" rx="2.2" ry="2.8" fill="#2d8f52"/>
+  <ellipse cx="16" cy="21" rx="2.2" ry="2.8" fill="#2d8f52"/>
+</svg>
