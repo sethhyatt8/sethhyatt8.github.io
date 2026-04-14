@@ -5,29 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Main Hub</title>
   <style>
+    :root {
+      --bg-app: #0b1220;
+      --bg-surface: #17233a;
+      --bg-surface-elevated: #1d2c48;
+      --text-primary: #f3f7ff;
+      --text-secondary: #b9c7e3;
+      --border-subtle: #2a3a5c;
+      --border-strong: #3b5280;
+      --accent: #f43f5e;
+      --accent-strong: #fb7185;
+      --shadow-sm: 0 2px 10px #00000040;
+      --shadow-md: 0 8px 24px #00000059;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --motion-fast: 0.12s ease;
+      --motion-base: 0.18s ease;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       margin: 2rem;
-      background: #f7f7f8;
-      color: #1f2937;
+      background: radial-gradient(circle at top center, #162746 0%, var(--bg-app) 48%);
+      color: var(--text-primary);
+      min-height: 100vh;
     }
 
     .hub-link-box {
       display: block;
-      max-width: 420px;
+      max-width: 520px;
       padding: 1rem 1.25rem;
       margin-top: 1rem;
-      border: 1px solid #d1d5db;
-      border-radius: 10px;
-      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(180deg, var(--bg-surface-elevated), var(--bg-surface));
       text-decoration: none;
       color: inherit;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--motion-fast), box-shadow var(--motion-base), border-color var(--motion-base);
     }
 
     .hub-link-box:hover {
       transform: translateY(-1px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-md);
     }
 
     .hub-link-title {
@@ -38,8 +59,23 @@
 
     .hub-link-description {
       font-size: 0.95rem;
-      color: #4b5563;
+      color: var(--text-secondary);
       margin: 0;
+    }
+
+    h1 {
+      margin: 0;
+      letter-spacing: 0.2px;
+    }
+
+    .hub-link-box:focus-visible {
+      outline: 2px solid var(--accent-strong);
+      outline-offset: 2px;
+    }
+
+    .hub-link-box:active {
+      border-color: var(--accent);
+      transform: translateY(1px) scale(0.995);
     }
   </style>
 </head>
@@ -49,6 +85,16 @@
   <a class="hub-link-box" href="/Workout/">
     <div class="hub-link-title">Workout</div>
     <p class="hub-link-description">High Intensity Interval Training Timer</p>
+  </a>
+
+  <a class="hub-link-box" href="/darts-scorer">
+    <div class="hub-link-title">Darts Scorer</div>
+    <p class="hub-link-description">Scoring interface for Cricket and x01, tracks player stats.</p>
+  </a>
+
+  <a class="hub-link-box" href="/MahJongGame">
+    <div class="hub-link-title">American MahJong</div>
+    <p class="hub-link-description">Analyze hands, and play mock games with Charleston</p>
   </a>
 </body>
 </html>
