@@ -26,17 +26,35 @@
 
     body {
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      margin: 2rem;
+      margin: 0;
+      font-size: clamp(1.05rem, 1.1rem + 0.35vw, 1.2rem);
+      line-height: 1.5;
       background: radial-gradient(circle at top center, #162746 0%, var(--bg-app) 48%);
       color: var(--text-primary);
       min-height: 100vh;
     }
 
+    .hub {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: min(52rem, calc(100% - clamp(1.5rem, 5vw, 3rem)));
+      margin: 0 auto;
+      padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1rem, 3vw, 1.5rem) clamp(2rem, 5vw, 3.5rem);
+    }
+
+    .hub-heading {
+      font-size: clamp(2.25rem, 5vw + 1rem, 3.5rem);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: 0.02em;
+      margin: 0 0 clamp(1.25rem, 3vw, 2rem);
+    }
+
     .hub-link-box {
       display: block;
-      max-width: 520px;
-      padding: 1rem 1.25rem;
-      margin-top: 1rem;
+      width: 100%;
+      padding: clamp(1.15rem, 2.2vw, 1.65rem) clamp(1.25rem, 2.8vw, 1.85rem);
+      margin-top: clamp(0.85rem, 2vw, 1.25rem);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-lg);
       background: linear-gradient(180deg, var(--bg-surface-elevated), var(--bg-surface));
@@ -55,13 +73,13 @@
     .hub-link-row {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: clamp(1rem, 2.5vw, 1.5rem);
     }
 
     .hub-link-icon {
       flex-shrink: 0;
-      width: 44px;
-      height: 44px;
+      width: clamp(3.25rem, 8vw, 4.5rem);
+      height: clamp(3.25rem, 8vw, 4.5rem);
       border-radius: var(--radius-md);
       border: 1px solid var(--border-subtle);
       background: #0d1627;
@@ -73,20 +91,17 @@
     }
 
     .hub-link-title {
-      font-size: 1.1rem;
+      font-size: clamp(1.35rem, 2vw + 0.85rem, 1.85rem);
       font-weight: 700;
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.4rem;
+      line-height: 1.2;
     }
 
     .hub-link-description {
-      font-size: 0.95rem;
+      font-size: clamp(1rem, 0.9rem + 0.45vw, 1.2rem);
       color: var(--text-secondary);
       margin: 0;
-    }
-
-    h1 {
-      margin: 0;
-      letter-spacing: 0.2px;
+      line-height: 1.45;
     }
 
     .hub-link-box:focus-visible {
@@ -98,14 +113,19 @@
       border-color: var(--accent);
       transform: translateY(1px) scale(0.995);
     }
+
+    .hub-link-box:first-of-type {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
-  <h1>Main Hub</h1>
+  <main class="hub">
+  <h1 class="hub-heading">Main Hub</h1>
 
   <a class="hub-link-box" href="/Workout/">
     <div class="hub-link-row">
-      <img class="hub-link-icon" src="/icons/workout.svg" width="44" height="44" alt="" />
+      <img class="hub-link-icon" src="/icons/workout.svg" width="72" height="72" alt="" />
       <div class="hub-link-text">
         <div class="hub-link-title">Workout</div>
         <p class="hub-link-description">High Intensity Interval Training Timer</p>
@@ -115,7 +135,7 @@
 
   <a class="hub-link-box" href="/darts-scorer">
     <div class="hub-link-row">
-      <img class="hub-link-icon" src="/darts-scorer/favicon.svg" width="44" height="44" alt="" />
+      <img class="hub-link-icon" src="/darts-scorer/favicon.svg" width="72" height="72" alt="" />
       <div class="hub-link-text">
         <div class="hub-link-title">Darts Scorer</div>
         <p class="hub-link-description">Scoring interface for Cricket and x01, tracks player stats.</p>
@@ -125,12 +145,13 @@
 
   <a class="hub-link-box" href="/MahJongGame">
     <div class="hub-link-row">
-      <img class="hub-link-icon" src="/icons/mahjong.svg" width="44" height="44" alt="" />
+      <img class="hub-link-icon" src="/icons/mahjong.svg" width="72" height="72" alt="" />
       <div class="hub-link-text">
         <div class="hub-link-title">American MahJong</div>
         <p class="hub-link-description">Analyze hands, and play mock games with Charleston</p>
       </div>
     </div>
   </a>
+  </main>
 </body>
 </html>
