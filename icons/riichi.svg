@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="Riichi">
+  <rect width="32" height="32" rx="8" fill="#17233a"/>
+  <rect x="6" y="8" width="8" height="11" rx="1.5" fill="#f3f7ff" stroke="#3b5280" stroke-width="1"/>
+  <rect x="12" y="10" width="8" height="11" rx="1.5" fill="#f3f7ff" stroke="#3b5280" stroke-width="1"/>
+  <rect x="18" y="8" width="8" height="11" rx="1.5" fill="#fef2f2" stroke="#fb7185" stroke-width="1.4"/>
+  <circle cx="10" cy="13.5" r="1.2" fill="#17233a"/>
+  <circle cx="16" cy="15.5" r="1.2" fill="#17233a"/>
+  <path stroke="#f43f5e" stroke-width="1.5" stroke-linecap="round" d="M20.5 12.5h3M22 11v3"/>
+  <path stroke="#b9c7e3" stroke-linecap="round" stroke-width="1.5" d="M8 24h16"/>
+</svg>
