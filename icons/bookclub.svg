@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Book club icon">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2d8f78"/>
+      <stop offset="1" stop-color="#14352c"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7fbf9"/>
+      <stop offset="1" stop-color="#d7e6df"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="116" height="116" rx="24" fill="url(#bg)"/>
+  <!-- open book -->
+  <path d="M22 38c14-6 28-4 42 4v54c-14-8-28-10-42-4V38z" fill="url(#page)"/>
+  <path d="M106 38c-14-6-28-4-42 4v54c14-8 28-10 42-4V38z" fill="url(#page)"/>
+  <path d="M64 42v54" stroke="#1f6b5a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M34 52h18M34 64h16M34 76h14" stroke="#7a948a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M76 52h18M78 64h16M80 76h14" stroke="#7a948a" stroke-width="3" stroke-linecap="round"/>
+  <!-- coffee cup -->
+  <rect x="86" y="86" width="22" height="18" rx="4" fill="#f8fafc"/>
+  <path d="M108 90h6a6 6 0 0 1 0 12h-6" fill="none" stroke="#f8fafc" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M92 82c2-3 3-5 1-7M98 81c2-3 3-5 1-7" fill="none" stroke="#a7f3d0" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
