@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="Recipes">
+  <rect width="32" height="32" rx="8" fill="#17233a"/>
+  <path stroke="#fb7185" stroke-width="1.6" stroke-linecap="round" d="M11 7v10.5a2.5 2.5 0 1 0 5 0V7"/>
+  <path stroke="#b9c7e3" stroke-width="1.6" stroke-linecap="round" d="M13.5 7v6M16 7v6"/>
+  <path stroke="#3b5280" stroke-width="1.6" stroke-linecap="round" d="M21 7v18M19 7h4"/>
+  <path stroke="#b9c7e3" stroke-width="1.5" stroke-linecap="round" d="M8 25h16"/>
+</svg>
