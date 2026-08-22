@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="Games">
+  <rect width="32" height="32" rx="8" fill="#17233a"/>
+  <rect x="7.5" y="8.5" width="12" height="12" rx="2.5" stroke="#fb7185" stroke-width="1.6"/>
+  <circle cx="11.2" cy="12.2" r="1.1" fill="#b9c7e3"/>
+  <circle cx="15.8" cy="16.8" r="1.1" fill="#b9c7e3"/>
+  <path stroke="#3b5280" stroke-width="1.5" stroke-linecap="round" d="M21 14.5h3.5v9H14.5V21"/>
+  <circle cx="23.2" cy="17.2" r="1" fill="#fb7185"/>
+</svg>
