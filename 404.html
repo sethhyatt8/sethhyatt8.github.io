@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main Hub</title>
+  <script>
+    (function () {
+      var apps = [
+        "Workout",
+        "darts-scorer",
+        "MahJongGame",
+        "granny-square",
+        "slides",
+        "flashcards",
+        "shows",
+        "riichi",
+        "games",
+        "azul",
+        "artists",
+        "recipes",
+        "pokemon",
+        "VR",
+        "House"
+      ];
+      var url = new URL(location.href);
+      var parts = url.pathname.split("/");
+      var typed = parts[1] || "";
+      var match = apps.find(function (name) {
+        return name.toLowerCase() === typed.toLowerCase();
+      });
+      if (match && match !== typed) {
+        parts[1] = match;
+        url.pathname = parts.join("/");
+        location.replace(url.toString());
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>That page is not on the hub. <a href="/">Back to the main hub.</a></p>
+</body>
+</html>
